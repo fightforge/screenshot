@@ -105,9 +105,18 @@ func GetDisplayBounds(displayIndex int) image.Rectangle {
 	ctx.Index = displayIndex
 	ctx.Count = 0
 	enumDisplayMonitors(win.HDC(0), nil, syscall.NewCallback(getMonitorBoundsCallback), uintptr(unsafe.Pointer(&ctx)))
+        right := ctx.Rect.Right
+	if (int(ctx.Rect.Right) < 0){
+		right = -ctx.Rect.Right
+	}
+
+        bottom := ctx.Rect.Bottom
+	if (int(ctx.Rect.Bottom) < 0){
+		bottom = -ctx.Rect.Bottom
+	}
 	return image.Rect(
 		int(ctx.Rect.Left), int(ctx.Rect.Top),
-		int(ctx.Rect.Right), int(ctx.Rect.Bottom))
+		int(right), int(bottom))
 }
 
 func getDesktopWindow() win.HWND {
