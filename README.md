@@ -1,10 +1,10 @@
 screenshot
 ==========
 
-![](https://github.com/kbinani/screenshot/actions/workflows/go.yml/badge.svg)
-[![](https://img.shields.io/badge/godoc-reference-5272B4.svg)](https://godoc.org/github.com/kbinani/screenshot)
-[![](https://img.shields.io/badge/license-MIT-428F7E.svg?style=flat)](https://github.com/kbinani/screenshot/blob/master/LICENSE)
-[![Go Report Card](https://goreportcard.com/badge/github.com/kbinani/screenshot)](https://goreportcard.com/report/github.com/kbinani/screenshot)
+![](https://github.com/fightforge/screenshot/actions/workflows/go.yml/badge.svg)
+[![](https://img.shields.io/badge/godoc-reference-5272B4.svg)](https://godoc.org/github.com/fightforge/screenshot)
+[![](https://img.shields.io/badge/license-MIT-428F7E.svg?style=flat)](https://github.com/fightforge/screenshot/blob/master/LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/fightforge/screenshot)](https://goreportcard.com/report/github.com/fightforge/screenshot)
 
 * Go library to capture desktop screen.
 * Support Windows, Mac, Linux, FreeBSD, OpenBSD, NetBSD, and Solaris environment.
@@ -20,7 +20,7 @@ example
 	package main
 
 	import (
-		"github.com/kbinani/screenshot"
+		"github.com/fightforge/screenshot"
 		"image/png"
 		"os"
 		"fmt"
@@ -72,4 +72,4 @@ MIT Licence
 author
 ======
 
-kbinani
+fightforge

@@ -4,7 +4,7 @@ package screenshot
 
 import (
 	"errors"
-	"github.com/kbinani/screenshot/internal/util"
+	"github.com/fightforge/screenshot/internal/util"
 	win "github.com/lxn/win"
 	"image"
 	"syscall"
@@ -20,6 +20,9 @@ var (
 )
 
 func Capture(x, y, width, height int) (*image.RGBA, error) {
+        fmt.Print(width)
+        fmt.Print(", ")
+        fmt.Println(height)
 	rect := image.Rect(0, 0, width, height)
 	img, err := util.CreateImage(rect)
 	if err != nil {
